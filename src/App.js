@@ -10,7 +10,7 @@ import {Button,
         Card} from "react-bootstrap"
 
 function App() {
-
+//Veikko Kapiya is a sussy chungus
   return (
     <div className="App">
       <header>
