@@ -32,7 +32,7 @@ function Profile() {
       </Accordion.Item>
     </Accordion>
     </div>
-  )
+  );
 }
 
 export default Profile;
