@@ -1,38 +1,41 @@
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
-import {Button,
-        Container,
-        Nav,
-        Navbar,
-        Row,
-        Col,
-        Image,
-        Card} from "react-bootstrap"
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { Navbar, Nav, Container, Button, Row, Col, Image, Card } from 'react-bootstrap';
+import News from './pages/News';
+
 
 function App() {
-//Veikko Kapiya is a sussy chungus
-//real
-  return (
-    <div className="App">
-      <header>
-        <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-          <Container>
-            <Navbar.Brand href="#home">Communiverse</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#news">News</Nav.Link>
-                <Nav.Link href="#events">Events</Nav.Link>
-                <Nav.Link href="#volunteer">Volunteer</Nav.Link>
-                <Nav.Link href="Profile.js">Profile</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </header>
 
-      <br></br>
+  return (
+    
+      <div className="App">
+        <Router>
+        <header>
+          <Navbar bg="dark" expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
+            <Container>
+              <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                  <Nav.Link as={Link} to="/">Home</Nav.Link>
+                  <Nav.Link as={Link} to="/news">News</Nav.Link>
+                  <Nav.Link as={Link} to="/events">Events</Nav.Link>
+                  <Nav.Link as={Link} to="/forum">Forums</Nav.Link>
+                  <Nav.Link as={Link} to="/profile">Profile</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+          <div>
+              <Routes>
+                <Route path="/news" element={<News/>}/>
+              </Routes> 
+          </div>
+        </header>
+        </Router>
+        <br></br>
       <br></br>
       
       <main>
@@ -190,7 +193,9 @@ function App() {
         </Container>
       </footer>
 
-    </div>
+      </div>
+    
+
   );
 }
 
