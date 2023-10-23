@@ -1,3 +1,11 @@
+import {
+	Container,
+	Button,
+	Row,
+	Col,
+	Image,
+	Card,
+} from "react-bootstrap";
 import { Container, Button, Row, Col, Image, Card } from "react-bootstrap";
 import Collaborator from "../components/Collaborator";
 
@@ -30,7 +38,13 @@ function Home() {
 							their parent) and add lightweight styles to them—all
 							via classes.
 						</p>
-						<Button variant="outline-secondary">Go to</Button>
+						<Button
+							variant="outline-secondary"
+							as={Link}
+							to="/news"
+						>
+							Go to
+						</Button>
 					</Col>
 				</Row>
 				<Row className="px-4 my-5">
@@ -42,7 +56,13 @@ function Home() {
 							their parent) and add lightweight styles to them—all
 							via classes.
 						</p>
-						<Button variant="outline-secondary">Go to</Button>
+						<Button
+							variant="outline-secondary"
+							as={Link}
+							to="/events"
+						>
+							Go to
+						</Button>
 					</Col>
 					<Col sm={7}>
 						<Image
@@ -70,7 +90,13 @@ function Home() {
 							their parent) and add lightweight styles to them—all
 							via classes.
 						</p>
-						<Button variant="outline-secondary">Go to</Button>
+						<Button
+							variant="outline-secondary"
+							as={Link}
+							to="/volunteer"
+						>
+							Go to
+						</Button>
 					</Col>
 				</Row>
 				<Row className="px-4 my-5">
@@ -82,7 +108,13 @@ function Home() {
 							their parent) and add lightweight styles to them—all
 							via classes.
 						</p>
-						<Button variant="outline-secondary">Go to</Button>
+						<Button
+							variant="outline-secondary"
+							as={Link}
+							to="/forums"
+						>
+							Go to
+						</Button>
 					</Col>
 					<Col sm={7}>
 						<Image
