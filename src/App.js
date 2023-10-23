@@ -7,6 +7,13 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 // page imports
 import Home from "./pages/Home";
 import News from "./pages/News";
+import Events from "./pages/Events";
+import Forums from "./pages/Forums";
+import Profile from "./pages/Profile";
+
+
+// component imports
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -53,13 +60,7 @@ function App() {
 					<br></br>
 					<br></br>
 
-					<footer class="py-5 my-5 bg-dark">
-						<Container className="px-4">
-							<p class="text-center text-white">
-								Copyright &copy; Your Website 2023
-							</p>
-						</Container>
-					</footer>
+					<Footer/>
 				</div>
 			</Router>
 		</>

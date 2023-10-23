@@ -6,7 +6,7 @@ import {
 	Image,
 	Card,
 } from "react-bootstrap";
-import Collaborator from "../Collaborator";
+import Collaborator from "../components/Collaborator";
 
 function Home() {
 	// plceholder data for cards
