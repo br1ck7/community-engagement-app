@@ -10,7 +10,7 @@ function CustomNav() {
 			data-bs-theme="dark"
 		>
 			<Container>
-				<Navbar.Brand href="#home">Communiverse</Navbar.Brand>
+				<Navbar.Brand href="/">Communiverse</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
