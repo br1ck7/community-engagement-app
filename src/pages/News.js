@@ -1,12 +1,10 @@
 import React from "react";
 
-import Accordion from 'react-bootstrap/Accordion';
+import Accordion from "react-bootstrap/Accordion";
 import NewsCarousel from "../components/NewsCarousel";
 
-
-
 function News() {
-  return (
+	return (
 		<>
 			<div>
 				<NewsCarousel />
@@ -44,8 +42,7 @@ function News() {
 				</Accordion>
 			</div>
 		</>
-  );
-
+	);
 }
 
 export default News;

@@ -1,11 +1,4 @@
-import {
-	Container,
-	Button,
-	Row,
-	Col,
-	Image,
-	Card,
-} from "react-bootstrap";
+import { Container, Button, Row, Col, Image, Card } from "react-bootstrap";
 import Collaborator from "../components/Collaborator";
 
 function Home() {
