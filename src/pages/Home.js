@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import {
 	Container,
 	Button,
@@ -7,10 +6,7 @@ import {
 	Image,
 	Card,
 } from "react-bootstrap";
-=======
 import { Container, Button, Row, Col, Image, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
->>>>>>> Stashed changes
 import Collaborator from "../components/Collaborator";
 
 function Home() {
