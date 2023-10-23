@@ -1,4 +1,4 @@
-import {Container, Carousel, Image } from "react-bootstrap";
+import { Container, Carousel, Image } from "react-bootstrap";
 
 function NewsCarousel() {
 	return (
