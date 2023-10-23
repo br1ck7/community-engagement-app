@@ -2,7 +2,7 @@ import React from "react";
 import Accordion from 'react-bootstrap/Accordion';
 
 
-function Profile() {
+function Forum() {
   return (
     <div>
       <Accordion defaultActiveKey="0">
@@ -32,7 +32,7 @@ function Profile() {
       </Accordion.Item>
     </Accordion>
     </div>
-  );
+  )
 }
 
-export default Profile;
+export default Forum;
