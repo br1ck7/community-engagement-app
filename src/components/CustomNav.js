@@ -29,6 +29,9 @@ function CustomNav() {
 						<Nav.Link as={Link} to="/profile">
 							Profile
 						</Nav.Link>
+						<Nav.Link as={Link} to="/addarticle">
+							Add Article
+						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>

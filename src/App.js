@@ -10,6 +10,7 @@ import Events from "./pages/Events";
 import Forums from "./pages/Forums";
 import Profile from "./pages/Profile";
 import Volunteer from "./pages/Volunteer";
+import ArticleForm from "./pages/ArticleForm";
 
 // component imports
 import Footer from "./components/Footer";
@@ -28,6 +29,7 @@ function App() {
 					<Route path="/forum" element={<Forums />} />
 					<Route path="/profile" element={<Profile />} />
 					<Route path="/volunteer" element={<Volunteer />} />
+					<Route path="/addarticle" element={<ArticleForm />} />
 				</Routes>
 				<br></br>
 				<br></br>
@@ -39,3 +41,5 @@ function App() {
 }
 
 export default App;
+
+
